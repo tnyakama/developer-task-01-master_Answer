@@ -1,0 +1,7 @@
+com.econetwireless.epay.api.aspects
+com.econetwireless.epay.api.config
+com.econetwireless.epay.api.processors.api
+com.econetwireless.epay.api.processors.impl
+com.econetwireless.epay.api.rest.messages
+com.econetwireless.epay.api.rest.resources
+com.econetwireless.epay.api.webinitialisers

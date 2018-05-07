@@ -1,0 +1,24 @@
+2018-05-06 22:48:52 INFO  IntegrationsConfig:49 --> intelligentNetworkService URL : jar:file:/C:/Users/TAWA/.m2/repository/com/econetwireless/electronic-payments-business/1.0.0/electronic-payments-business-1.0.0.jar!/wsdls/IntelligentNetworkService.wsdl
+2018-05-06 22:48:54 INFO  RequestInterceptor:37 --> IN Get Partner Transactions :: Partner Code : hot-recharge
+2018-05-06 22:48:55 INFO  RequestInterceptor:56 --> [[SUCCESS] ] IN Get Partner Transactions Response :: Partner Code : hot-recharge, Response Code : 200, Narrative : Successful search
+2018-05-06 22:48:55 INFO  RequestInterceptor:98 --> IN ECredit Airtime :: Partner Code : hot-recharge, Mobile Number : hot-recharge
+2018-05-06 22:48:55 INFO  CreditsServiceImpl:39 --> Credit airtime Request : AirtimeTopupRequest{partnerCode='hot-recharge', msisdn='263773303584', amount=2.73, referenceNumber='TOPUP-REF-0123'}
+2018-05-06 22:48:55 INFO  CreditsServiceImpl:51 --> Finished Airtime Credit :: Msisdn : 263773303584, response code : 200
+2018-05-06 22:48:55 INFO  RequestInterceptor:116 --> [[SUCCESS] ] IN Airtime Credit Response :: Partner Code : hot-recharge, Mobile Number : hot-recharge, Response Code : 200, Narrative : Successful credit request
+2018-05-06 22:48:55 INFO  RequestInterceptor:67 --> IN Enquire Airtime Balance :: Partner Code : hot-recharge, Mobile Number : 774222278
+2018-05-06 22:48:55 INFO  EnquiriesServiceImpl:36 --> Enquire airtime balance :: Partner Code : hot-recharge, Msisdn : 263774222278
+2018-05-06 22:48:55 INFO  EnquiriesServiceImpl:49 --> Finished balance enquiry :: Msisdn : 263774222278, response code : 200
+2018-05-06 22:48:55 INFO  RequestInterceptor:75 --> ***response AirtimeBalanceResponse{responseCode='200', narrative='Successful balance enquiry', msisdn='263774222278', amount=8.0}
+2018-05-06 22:48:55 INFO  RequestInterceptor:88 --> [[SUCCESS] ] IN Enquire Airtime Balance Response :: Partner Code : hot-recharge, Mobile Number : 774222278, Response Code : 200, Narrative : Successful balance enquiry
+2018-05-06 23:55:37 INFO  IntegrationsConfig:49 --> intelligentNetworkService URL : jar:file:/C:/Users/TAWA/.m2/repository/com/econetwireless/electronic-payments-business/1.0.0/electronic-payments-business-1.0.0.jar!/wsdls/IntelligentNetworkService.wsdl
+2018-05-06 23:55:39 INFO  RequestInterceptor:37 --> IN Get Partner Transactions :: Partner Code : hot-recharge
+2018-05-06 23:55:39 INFO  RequestInterceptor:56 --> [[SUCCESS] ] IN Get Partner Transactions Response :: Partner Code : hot-recharge, Response Code : 200, Narrative : Successful search
+2018-05-06 23:55:39 INFO  RequestInterceptor:98 --> IN ECredit Airtime :: Partner Code : hot-recharge, Mobile Number : hot-recharge
+2018-05-06 23:55:39 INFO  CreditsServiceImpl:39 --> Credit airtime Request : AirtimeTopupRequest{partnerCode='hot-recharge', msisdn='263773303584', amount=2.73, referenceNumber='TOPUP-REF-0123'}
+2018-05-06 23:55:39 INFO  CreditsServiceImpl:51 --> Finished Airtime Credit :: Msisdn : 263773303584, response code : 200
+2018-05-06 23:55:39 INFO  RequestInterceptor:116 --> [[SUCCESS] ] IN Airtime Credit Response :: Partner Code : hot-recharge, Mobile Number : hot-recharge, Response Code : 200, Narrative : Successful credit request
+2018-05-06 23:55:39 INFO  RequestInterceptor:67 --> IN Enquire Airtime Balance :: Partner Code : hot-recharge, Mobile Number : 774222278
+2018-05-06 23:55:39 INFO  EnquiriesServiceImpl:36 --> Enquire airtime balance :: Partner Code : hot-recharge, Msisdn : 263774222278
+2018-05-06 23:55:39 INFO  EnquiriesServiceImpl:49 --> Finished balance enquiry :: Msisdn : 263774222278, response code : 200
+2018-05-06 23:55:39 INFO  RequestInterceptor:75 --> ***response AirtimeBalanceResponse{responseCode='200', narrative='Successful balance enquiry', msisdn='263774222278', amount=667.0}
+2018-05-06 23:55:39 INFO  RequestInterceptor:88 --> [[SUCCESS] ] IN Enquire Airtime Balance Response :: Partner Code : hot-recharge, Mobile Number : 774222278, Response Code : 200, Narrative : Successful balance enquiry

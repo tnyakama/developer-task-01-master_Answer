@@ -1,0 +1,77 @@
+* package com.econetwireless.epay.domain
+
+**SubscriberRequest.java
+1.line 43, changed @PreInsert --> @PrePersist
+2.line 13,changed "request"----> "Request"
+
+* package com.econetwireless.in.soap.service
+
+**IntelligentNetworkServiceImpl.java
+1.line 22, added @service annotation, line 15 add --> import org.springframework.stereotype.Service
+2.line 24 @Webservice Annotation --> removed name attribute
+**IntelligentNetworkService.java
+1.line 23 -> added (@WebParam(name = "PartnerCode"))
+2.linen 18 added @Service annotation -> line 11 import org.springframework.stereotype.Service
+3.line 22,24 added @Bean annotation --> line 10 import added
+**CreditRequest.java
+1.line 9 added @Component annotation
+
+* package com.econetwireless.epay.business.config
+
+**IntegrationsConfig.java
+1.line 24 added @Service annotation -> line 18 added import
+2.line 26 added @ComponentScan(com.econetwireless.in.soap.services") --> import added line 17
+3.Changed import line 5
+
+*package com.econetwireless.epay.business.integrations.impl
+
+**ChargingPlatformImpl.java
+1.line 5, line 8 added new imports, comment out line 6, line 7
+2.line 25, added @Autowired annotation -> import added line 12
+3.line 32, line 37 added @Bean annotation -> import added line 13
+
+*package com.econetwireless.epay.business.services.impl
+
+**CreditsServiceImpl.java
+1.line 23 added @Service annotation -> import added line 16
+2.added @Bean annotation line 37,55,66,76 -> import added line 15
+3.line 44 changed persist(subscriberRequest) --> save(subscriberRequest)
+4.line 47 changed update(createdSubscriberRequest) --> save(createdSubscriberRequest)
+**EnquiriesServiceImpl.java
+1.line 21 added @Service annotation -> import added line 14
+2.line 34 added @Bean annotation -> import added line 13
+3.line 41 changed persist(subscriberRequest) --> saveAndFlush(subscriberRequest)
+4.line 45 changed update(createdSubscriberRequest) --> save(createdSubscriberRequest)
+**PartnerCodeValidatorImpl
+1. line 17 changed this(super)--> super()
+
+*package com.econetwireless.epay.business.utils
+
+**MessageConverters.java
+1.line 18 added @Component annotation -> import added line 12
+2.line 24 added @Service annotation -> import added line 11
+3.lines 6,7 new import added
+4.lines 4,5 commented out
+
+*package com.econetwireless.epay.api.rest.resources
+
+**EpayResource.java
+1.lines 20,23 added @Autowired annotation->import added line 9
+
+*package com.econetwireless.epay.api.rest.resources
+
+**EpayResourcesIT.java
+1. line 51 added alwaysDo(MockMvcResultHandlers.print()) -> import added line 27
+
+*package com.econetwireless.utils.enums
+
+**ResponseCode.java
+1.line 12 changed code= code --> this.code=code
+
+*package com.econetwireless.utils.formatters
+
+**MobileNumberUtils.java
+1.line 14 ...changed private final Logger --> private static final Logger
+
+*econet-utils---> Project Files -->pom.xml
+1.line 12 added <groupId>com.econetwireless</groupId>
